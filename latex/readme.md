@@ -28,8 +28,7 @@ dabei wiefolgt aufgebaut:
 ```json
 {
   "title": "Der Titel",
-  "rule": "Die Regel als Regex. Das landet später in 'grep', daher sollten Sie
-  den Regex-Syntax von 'grep' verwenden!",
+  "rule": "Die Regel als Regex. Das landet später in 'grep', daher sollten Sie den Regex-Syntax von 'grep' verwenden!",
   "args": ["zusätzliche", "Argumente", "für", "grep"],
   "excludes": ["thesis.tex", "Dateien die ignoriert werden sollen"],
   "includes": ["rules.json", "Dateien die in jedem Fall überprüft werden sollen"],
