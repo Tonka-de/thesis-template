@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Keine ungelesenen Markierungen",
+    "rule": "\\\\newcommand\\{\\\\.*marker.*\\}"
+  },
+  {
+    "title": "Verbiete das Wort 'Abschlussarbeit'",
+    "rule": "Abschlussarbeit"
+  },
+  {
+    "title": "Verbiete mehr wie ein Leerzeichen im Text",
+    "rule": "[[:alnum:]_\\.,][\t ]{2,}[[:alnum:]_\\.,]+"
+  },
+  {
+    "title": "Kein Punkt vor dem Zitieren",
+    "rule": "\\. *\\\\autocite\\{.*\\}"
+  },
+  {
+    "title": "Kein Komma vor 'sowie'",
+    "rule": ", *sowie"
+  },
+  {
+    "title": "Immer Komma vor 'sondern'",
+    "rule": "[^,] sondern"
+  },
+  {
+    "title": "Ein Kapitel hat immer ein Chapter",
+    "rule": "\\\\chapter\\{.+\\}",
+    "excludes": ["*"],
+    "includes": ["kapitel*.tex"],
+    "mustContain": true
+  }
+]
